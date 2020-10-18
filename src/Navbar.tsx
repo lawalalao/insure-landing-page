@@ -30,13 +30,13 @@ export default () => {
           <Close className="nav__menu-icon" onClick={toggleMenu} />
         )}
         <div className="nav__menu" id="nav-menu">
-          <a className="nav__link" aria-label="how we work" >
+          <a href="/" className="nav__link" aria-label="how we work">
             how we work
           </a>
-          <a className="nav__link" aria-label="blog" >
+          <a href="/" className="nav__link" aria-label="blog">
             blog
           </a>
-          <a className="nav__link" aria-label="account" >
+          <a href="/" className="nav__link" aria-label="account">
             account
           </a>
           <Button
