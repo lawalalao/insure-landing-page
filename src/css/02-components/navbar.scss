@@ -1,7 +1,7 @@
 @import "../01-config/variables.scss";
 
 .nav__wrapper {
-  background-color: white;
+  // background-color: white;
   position: relative;
   z-index: 999;
   width: 100%;
@@ -14,12 +14,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: white;
+  // background: white;
   z-index: 999;
 }
 
 .nav__logo {
   margin-right: auto;
+  margin-left: 3px;
 }
 
 .nav__link {
@@ -42,13 +43,17 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $Dark-Grayish-Violet;
-    margin-right: 24.6px;
     transition: all ease-out 0.2s;
+    margin-top: 5px;
+    margin-right: 24.6px;
     &:hover {
       color: $Very-Dark-Violet;
     }
     &:active {
       color: $Dark-Grayish-Violet;
+    }
+    &:last-of-type {
+      margin-right: 33px;
     }
   }
 }

@@ -6,6 +6,7 @@
   border-radius: 2px;
   transition: all ease-out 0.2s;
   cursor: pointer;
+  padding-top: 2px;
 
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -31,26 +32,26 @@
     border: 2px solid $Very-Dark-Violet;
     &:hover {
       background: $Very-Dark-Violet;
-      color: white;
+      color: $Very-Light-Gray;
     }
     &:active {
-      background: white;
-      border-color: white;
+      background: $Very-Light-Gray;
+      border-color: $Very-Light-Gray;
       color: $Very-Dark-Violet;
     }
   }
 
   &.button--white {
-    color: white;
-    border: 2px solid white;
+    color: $Very-Light-Gray;
+    border: 2px solid $Very-Light-Gray;
     &:hover {
-      background: white;
+      background: $Very-Light-Gray;
       color: $Very-Dark-Violet;
     }
     &:active {
       background: $Dark-Violet;
       border-color: $Dark-Violet;
-      color: white;
+      color: $Very-Light-Gray;
     }
   }
 }

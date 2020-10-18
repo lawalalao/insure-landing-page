@@ -6,7 +6,7 @@
   position: relative;
   &::before {
     content: "";
-    background: $Dark-Violet;
+    background: $Dark-Grayish-Violet;
     width: 150px;
     height: 1px;
   }
@@ -19,12 +19,12 @@
 }
 
 .content__card {
-  max-width: 350px;
   .content__card-img {
     display: block;
   }
   .content__card-title {
     font-size: 27px;
+    font-weight: normal;
     line-height: 63px;
     letter-spacing: 0.1px;
     color: $Very-Dark-Violet;
@@ -34,7 +34,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0.01px;
     color: $Dark-Grayish-Violet;
   }
 }
@@ -67,9 +66,14 @@
     line-height: 64px;
   }
   .content__card {
+    max-width: 350px;
     margin-top: 96px;
-    &:not(:nth-last-child(2)) {
+    &:nth-of-type(1) {
       margin-right: 30px;
+    }
+    &:nth-of-type(2) {
+      max-width: 355px;
+      margin-right: 25px;
     }
     .content__card-img {
       margin-bottom: 20px;
@@ -97,6 +101,7 @@
     }
     .button {
       z-index: 2;
+      margin-top: -2px !important;
       width: 161px !important;
     }
   }
