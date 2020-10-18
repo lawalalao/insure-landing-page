@@ -31,7 +31,7 @@ export default () => {
             <ul key={idx}>
               {links.map((link, i) => (
                 <li key={i}>
-                  <a href="">{link}</a>
+                  <a href="#">{link}</a>
                 </li>
               ))}
             </ul>
