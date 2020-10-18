@@ -1,0 +1,153 @@
+@import "../01-config/variables.scss";
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  &::before {
+    content: "";
+    background: $Dark-Violet;
+    width: 150px;
+    height: 1px;
+  }
+}
+
+.content__header {
+  font-weight: normal;
+  letter-spacing: -1.1px;
+  color: $Very-Dark-Violet;
+}
+
+.content__card {
+  max-width: 350px;
+  .content__card-img {
+    display: block;
+  }
+  .content__card-title {
+    font-size: 27px;
+    line-height: 63px;
+    letter-spacing: 0.1px;
+    color: $Very-Dark-Violet;
+  }
+  .content__card-text {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.01px;
+    color: $Dark-Grayish-Violet;
+  }
+}
+
+.content__footer {
+  background: $Dark-Violet;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 1110px) {
+  .content {
+    max-width: 1110px;
+    margin: 0 auto;
+    &::before {
+      position: absolute;
+      margin-top: 304px;
+      margin-bottom: 63px;
+    }
+  }
+  .content__header {
+    margin-top: 369px;
+    margin-right: 369px;
+    font-size: 72px;
+    line-height: 64px;
+  }
+  .content__card {
+    margin-top: 96px;
+    &:not(:nth-last-child(2)) {
+      margin-right: 30px;
+    }
+    .content__card-img {
+      margin-bottom: 20px;
+    }
+  }
+  .content__footer {
+    height: 250px;
+    width: 100%;
+    padding: 0 80px;
+    margin-top: 158px;
+    &::after {
+      content: url("./../../images/bg-pattern-how-we-work-desktop.svg");
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+    }
+    h3 {
+      max-width: 490px;
+      margin-right: auto;
+      font-size: 56px;
+      font-weight: normal;
+      line-height: 56px;
+      letter-spacing: -0.7px;
+    }
+    .button {
+      z-index: 2;
+      width: 161px !important;
+    }
+  }
+}
+
+@media (max-width: 1109px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+      position: relative;
+      margin: 0 auto;
+      top: 140px;
+    }
+  }
+  .content__header {
+    margin: 171px auto 25px;
+    font-size: 48px;
+    position: relative;
+  }
+  .content__card {
+    margin: 25px auto 10px;
+    padding: 0 26px;
+    text-align: center;
+    .content__card-img {
+      margin: 20px auto;
+    }
+  }
+  .content__footer {
+    padding: 53px 25px;
+    margin: 133px 24px;
+    height: 344px;
+    text-align: center;
+    &::after {
+      content: url("./../../images/bg-pattern-how-we-work-mobile.svg");
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+    }
+    h3 {
+      font-size: 40px;
+      font-weight: normal;
+      line-height: 40px;
+      letter-spacing: -0.7px;
+    }
+    .button {
+      z-index: 2;
+      width: 161px !important;
+      margin: 0 auto;
+    }
+  }
+}

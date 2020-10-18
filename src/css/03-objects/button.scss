@@ -1,0 +1,56 @@
+@import "../01-config/variables.scss";
+
+.button {
+  outline: none;
+  background: none;
+  border-radius: 2px;
+  transition: all ease-out 0.2s;
+  cursor: pointer;
+
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+
+  &.button--normal {
+    width: 146px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  &.button--large {
+    width: 325px;
+    height: 55px;
+    font-size: 20px;
+    margin: 13px auto;
+  }
+  
+  &.button--violet {
+    color: $Very-Dark-Violet;
+    border: 2px solid $Very-Dark-Violet;
+    &:hover {
+      background: $Very-Dark-Violet;
+      color: white;
+    }
+    &:active {
+      background: white;
+      border-color: white;
+      color: $Very-Dark-Violet;
+    }
+  }
+
+  &.button--white {
+    color: white;
+    border: 2px solid white;
+    &:hover {
+      background: white;
+      color: $Very-Dark-Violet;
+    }
+    &:active {
+      background: $Dark-Violet;
+      border-color: $Dark-Violet;
+      color: white;
+    }
+  }
+}
