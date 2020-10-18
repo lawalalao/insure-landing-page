@@ -1,7 +1,7 @@
 @import "../01-config/variables.scss";
 
 .nav__wrapper {
-  // background-color: white;
+  background-color: white;
   position: relative;
   z-index: 999;
   width: 100%;
@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  // background: white;
+  background: white;
   z-index: 999;
 }
 
